@@ -7,6 +7,31 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <div class="controls">
+            <div class="controls__range">
+                <!--- max : <input> 요소의 최댓값을 명시함.
+                - min : <input> 요소의 최솟값을 명시함.             
+                - step : <input> 요소에 입력할 수 있는 숫자들 사이의 간격을 명시함.             
+                - value : <input> 요소의 초깃값을 명시함.-->
+                <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1" />
+            </div>
+            <div class="controls__btns">
+                <button id="jsMode">Fill</button>
+                <button id="jsSave">Save</button>
+            </div>
+            <div class="controls__colors">
+                <div class="controls__color jsColor" style="background-color:#2c2c2c ;"></div>
+                <div class="controls__color jsColor" style="background-color: white;"></div>
+                <div class="controls__color jsColor" style="background-color: red;"></div>
+                <div class="controls__color jsColor" style="background-color: orange;"></div>
+                <div class="controls__color jsColor" style="background-color: #ffcc00;"></div>
+                <div class="controls__color jsColor" style="background-color: #4cd963;"></div>
+                <div class="controls__color jsColor" style="background-color: #5Ac8fa;"></div>
+                <div class="controls__color jsColor" style="background-color: #0579FF;"></div>
+                <div class="controls__color jsColor" style="background-color: #5856d6;"></div>
+            </div>
+        </div>
         <script src="app.js"></script>
     </body>
 </html>

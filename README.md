@@ -2,42 +2,62 @@
 
 Painting Board made with VanillaJS
 
-# gitclone
+# reset CSS
 
-r@DESKTOP-912QOT8 MINGW64 /c (master)
-\$ cd js
+https://meyerweb.com/eric/tools/css/reset/
 
-r@DESKTOP-912QOT8 MINGW64 /c/js (master)
-\$ git clone https://github.com/GOKKEU/paintjs
-Cloning into 'paintjs'...
-remote: Enumerating objects: 4, done.
-remote: Counting objects: 100% (4/4), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (4/4), 1.41 KiB | 42.00 KiB/s, done.
+# all: unset;
 
-r@DESKTOP-912QOT8 MINGW64 /c/js (master)
-\$ cd paintjs
+/_엘리먼트에 적용된 값들을 초기화_/
 
-r@DESKTOP-912QOT8 MINGW64 /c/js/paintjs (master)
-\$ ls
-README.md
+# transform: scale()
 
-r@DESKTOP-912QOT8 MINGW64 /c/js/paintjs (master)
-\$ code .
+/_버튼 클릭 효과_/
+.controls\_\_btns button:active {
+/_transform의 scale로 요소를 확대 또는 축소_/
+transform: scale(0.98);
+}
+
+# getElementsByClassName
+
+document.getElementsByClassName("jsColor");//class collection 모음
+
+# array로 만들기
+
+Array.from(colors)
+
+# canvas
+
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath
+
+# input.addEventListener('input', updateValue);
+
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
+
+# 버튼의 TEXT 변경
+
+let filling = false;
+---------------
+if (filling === true) {
+filling = false;
+mode.innerText = "Fill";
+} else {
+filling = true;
+mode.innerText = "Paint";
+}
+
+# 마우스 우클릭 금지
+addEventListener("contextmenu", handleCM);
+
+function handleCM (e){
+    e.preventDefault();
+}
 
 # 단축키
 
-| 키    | 결과            |
-| ----- | --------------- |
-| html5 | <!DOCTYPE html> |
+| 키                                            | 결과                                                                                        |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| html5                                         | <!DOCTYPE html>~~ </html>                                                                   |
+| div.controls_btns>button#jsMode+button#jsSave | <div class="controls_btns"><button id="jsMode"></button><button id="jsSave"></button></div> |
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body></body>
-</html>
 |
