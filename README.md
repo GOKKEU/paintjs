@@ -1,16 +1,16 @@
-# paintjs
+### paintjs
 
 Painting Board made with VanillaJS
 
-# reset CSS
+### reset CSS
 
 https://meyerweb.com/eric/tools/css/reset/
 
-# all: unset;
+### all: unset;
 
 /_엘리먼트에 적용된 값들을 초기화_/
 
-# transform: scale()
+### transform: scale()
 
 /_버튼 클릭 효과_/
 .controls\_\_btns button:active {
@@ -18,26 +18,26 @@ https://meyerweb.com/eric/tools/css/reset/
 transform: scale(0.98);
 }
 
-# getElementsByClassName
+### getElementsByClassName
 
 document.getElementsByClassName("jsColor");//class collection 모음
 
-# array로 만들기
+### array로 만들기
 
 Array.from(colors)
 
-# canvas
+### canvas
 
 https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/beginPath
 
-# input.addEventListener('input', updateValue);
+### input.addEventListener('input', updateValue);
 
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
 
-# 버튼의 TEXT 변경
+### 버튼의 TEXT 변경
 
-let filling = false;
----------------
+## let filling = false;
+
 if (filling === true) {
 filling = false;
 mode.innerText = "Fill";
@@ -46,18 +46,17 @@ filling = true;
 mode.innerText = "Paint";
 }
 
-# 마우스 우클릭 금지
+### 마우스 우클릭 금지
+
 addEventListener("contextmenu", handleCM);
 
 function handleCM (e){
-    e.preventDefault();
+e.preventDefault();
 }
 
-# 단축키
+### 단축키
 
-| 키                                            | 결과                                                                                        |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| html5                                         | <!DOCTYPE html>~~ </html>                                                                   |
-| div.controls_btns>button#jsMode+button#jsSave | <div class="controls_btns"><button id="jsMode"></button><button id="jsSave"></button></div> |
-
-|
+| 키                                            | 결과             |
+| --------------------------------------------- | ---------------- |
+| html5                                         | HTML 기본 틀     |
+| div.controls_btns>button#jsMode+button#jsSave | div안에 버튼 2개 |
